@@ -1,84 +1,141 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>AcquaTec | Simulador</title>
-
+    <title>TechBerry - Simulador</title>
     <script src="./js/funcoes.js"></script>
-
-    <link rel="icon" href="./assets/icon/favicon.ico">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
 </head>
 
 <body>
+    <div class="fundo">
+        <div class="header">
+            <div class="container">
 
-    <!--header inicio-->
-    <div class="header">
-        <div class="container">
-            <h1 class="titulo">AcquaTec</h1>
-            <ul class="navbar">
-                <li>
-                    <a href="./index.html">Inicial</a>
-                </li>
-                <li class="agora">Simulador</li>
-                <li>|</li>
-                <li>
-                    <a href="./login.html">Login</a>
-                </li>
-                <li>
-                    <a href="./login.html">Cadastro</a>
-                </li>
-            </ul>
+                <div class="titulo">
+                    <img src="./assets/imgs/logo1.png" alt="Morangos">
+                    <h1>TechBerry</h1>
+                </div>
+
+                <ul class="navBar">
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="servicos.html">
+                            Serviços
+                        </a>
+                    </li>
+                    <li class="aqui">
+                        <a>
+                            Simulador
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="register">
+                    <div id="cadastro">
+                        <li><a href="cadastro.html">Cadastro</a></li>
+                    </div>
+
+                    |
+
+                   
+                        <div id="login">
+                            <li> <a href="login.html">Login</a></li>
+                        </div>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="banner">
+            <div class="container">
+                <div class="box1">
+                    <h1>Calcule o quanto você deixaria de perder com nossos serviços!</h1>
+                </div>
+                <div class="box2">
+                    <h3>Preço da muda do morango: R$5,90 </h3>
+                    <h3>Plantas por metro quadrado: 7,5 </h3> 
+                    <h3>Qual a área de plantação você deseja? (Em m²) </h3>
+                    <input id="area"> <br><br>
+                    <button onclick="calculo()" id="butao">Calcular</button> 
+                    <div id="resultado"></div>
+                </div>
+            </div>
         </div>
     </div>
 
-
-    <!-- simulador inicio -->
-    <div class="simulador">
-        <div class="container">
-            <h2>Simulador</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium tempora architecto sint fugit
-                dolorum? Ipsum laborum magnam similique labore, voluptate amet reprehenderit rem ab blanditiis quisquam
-                laboriosam eaque alias. Reiciendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Accusantium tempora architecto sint fugit dolorum? Ipsum laborum magnam similique labore, voluptate amet
-                reprehenderit rem ab blanditiis quisquam laboriosam eaque alias. Reiciendis.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium tempora architecto sint fugit
-                dolorum? Ipsum laborum magnam similique labore, voluptate amet reprehenderit rem ab blanditiis quisquam
-                laboriosam eaque alias. Reiciendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Accusantium tempora architecto sint fugit dolorum? Ipsum laborum magnam similique labore, voluptate amet
-                reprehenderit rem ab blanditiis quisquam laboriosam eaque alias. Reiciendis.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium tempora architecto sint fugit
-                dolorum? Ipsum laborum magnam similique labore, voluptate amet reprehenderit rem ab blanditiis quisquam
-                laboriosam eaque alias. Reiciendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Accusantium tempora architecto sint fugit dolorum? Ipsum laborum magnam similique labore, voluptate amet
-                reprehenderit rem ab blanditiis quisquam laboriosam eaque alias. Reiciendis.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium tempora architecto sint fugit
-                dolorum? Ipsum laborum magnam similique labore, voluptate amet reprehenderit rem ab blanditiis quisquam
-                laboriosam eaque alias. Reiciendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Accusantium tempora architecto sint fugit dolorum? Ipsum laborum magnam similique labore, voluptate amet
-                reprehenderit rem ab blanditiis quisquam laboriosam eaque alias. Reiciendis.</p>
-
-        </div>
-    </div>
-    <!-- simulador fim -->
-
-    <!--footer inicio-->
     <div class="footer">
-        <div class="container">
-            <h4>Feito com amor por um aluno &hearts;SPTech &copy; 2022</h4>
+        <div class="footer_box1">
+            <div class="div_footer">
+
+                <div class="titulo_footer">
+                    <h1>O que faltava para desfrutar da sua produção.</h1>
+                </div>
+                
+                <ul class="ul_footer">
+                    <h3>Contato</h3>
+
+                    <li>Tel: 11 123456789</li>
+                    <li>Email: TechBerry@gmail.com</li>
+
+                </ul>
+
+                <div class="div_footer">
+
+                    <ul class="ul_footer">
+                        <h3>Empresa</h3>
+                        <li>Sobre</li>
+                        <li>Marca</li>
+                        <li>Empregos</li>
+                    </ul>
+                </div>
+
+                <div class="div_footer">
+
+                    <ul class="ul_footer">
+                        <h3>Politica</h3>
+                        <li>Termos</li>
+                        <li>Privacidade</li>
+                        <li>Configurações de cookies</li>
+                        <li>Diretrizes</li>
+                        <li>Reconhecimentos</li>
+                        <li>Licenças</li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
+
+
     </div>
-    <!--footer fim-->
 
+    <div class="logo_footer">
+        <img src="imgs/logo1.png" alt=""><h3>TechBerry</h3>
+    </div>
 
+    </div>
 </body>
 
 </html>
+
+<script>
+function calculo(){
+        var muda = 7.5;
+        var preco = (area.value * muda) * 5.90;
+        resultado.style.width = '40%';
+        resultado.innerHTML = `<br><br><br><h3>Baseado na área de <u>${area.value}m²</u>, você precisará de <u>${area.value * muda} mudas</u>, que custarão <u>R$${preco}</u>.<br><br>Sabendo que a perda de morango por colheita é em média de 30%, nós conseguiriamos te ajudar a lucrar mais R$${(preco - (preco * 0.7)).toFixed(2)} que seriam perdidos!</h3>`;
+    }
+    
+</script>
