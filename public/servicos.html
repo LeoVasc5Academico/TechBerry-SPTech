@@ -5,29 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/servicos.css">
-    <link rel="icon" href="./assets/imgs/logo1.png">
+    <link rel="stylesheet" href="css/servicos.css">
+    <link rel="icon" href="imgs/logo1.png">
     <title>TechBerry - Serviços</title>
 </head>
 
 <body>
-    <div class="fundo">
+    <!-- HEADER -->
+    
+    <div class="fundo_servicos">
         <div class="header">
             <div class="container">
 
                 <div class="titulo">
-                    <img src="./assets/imgs/logo1.png" alt="">
+                    <img src="imgs/logo1.png" alt="">
                     <h1>TechBerry</h1>
                 </div>
 
                 <ul class="navBar">
                     <li>
-                        <a href="index.html">
+                        <a href="/">
                             Home
                         </a>
                     </li>
-                    <li>
-                        <a class="aqui">
+                    <li class="aqui">
+                        <a href="servicos.html">
                             Serviços
                         </a>
                     </li>
@@ -36,25 +38,23 @@
                             Simulador
                         </a>
                     </li>
-                    <li>
-                        <a href="">
-                            Contato
-                        </a>
-                    </li>
                 </ul>
 
                 <ul class="register">
-
-                    <div id="cadastro">
-                        <li><a href="cadastro.html">Cadastro</a></li>
-                    </div>
+                    <a href="cadastro.html">
+                        <div class="cadastro_botao">
+                            <li>Cadastro</li>
+                        </div>
+                    </a>
 
                     |
 
+                    <a href="login.html">
+                        <div class="login_botao">
+                            <li> Login</li>
+                        </div>
+                    </a>
 
-                    <div id="login">
-                        <li> <a href="login.html">Login</a></li>
-                    </div>
                 </ul>
 
             </div>
@@ -71,21 +71,21 @@
         <h1>Nossos Serviços</h1>
         <div class="boxes">
             <div class="box">
-                <img src="./assets/imgs/sensor.png" alt="">
+                <img src="imgs/sensor.png" alt="">
                 <h4>INSTALAÇÃO DE SENSORES</h4>
                 <p>Nossa equipe irá até a sua estufa para realizar a instalação dos sensores DHT11 que irão capturar com
                     precisão a temperatura e umidade. Sua estufa sempre estará sendo monitorada para evitar que o seu
                     produto corra riscos.</p>
             </div>
             <div class="box">
-                <img src="./assets/imgs/data_icon.png" alt="">
+                <img src="imgs/data_icon.png" alt="">
                 <h4>GERAÇÃO DE DADOS</h4>
                 <p>Após a instalação dos sensores, sua estufa estará conectada à nossa base de dados localizada em
                     nossos servidores. Uma conexão entre os sensores e uma máquina local enviará os dados aos nossos
                     servidores.</p>
             </div>
             <div class="box">
-                <img src="./assets/imgs/plat.png" alt="">
+                <img src="imgs/plat.png" alt="">
                 <h4>PLATAFORMA COM OS DADOS</h4>
                 <p>Você terá acessos à uma dashboard onde poderá visualizar os dados registrados pelos sensores,
                     estatisticas geradas automaticamente e muitas informações concretas para auxiliar na sua tomada de
@@ -93,33 +93,24 @@
             </div>
         </div>
     </div>
-    <div class="footer">
-        <div class="footer_box1">
-            <div class="div_footer">
+    <!-- FOOTER -->
 
-                <div class="titulo_footer">
+    <div class="footer">
+        <div class="container">
+            <div class="boxes_footer1">
+
+                <div class="slogan_footer">
                     <h1>O que faltava para desfrutar da sua produção.</h1>
                 </div>
-                
-                <ul class="ul_footer">
-                    <h3>Contato</h3>
 
-                    <li><b>Telefone:</b> (11) 3456-9872</li>
-                    <li><b>Email:</b> TechBerry@gmail.com</li>
-                </ul>
-
-                <div class="div_footer">
-
+                <div class="listas_footer">
                     <ul class="ul_footer">
                         <h3>Empresa</h3>
                         <li>Sobre</li>
                         <li>Marca</li>
                         <li>Empregos</li>
                     </ul>
-                </div>
-
-                <div class="div_footer">
-
+                    
                     <ul class="ul_footer">
                         <h3>Politica</h3>
                         <li>Termos</li>
@@ -129,16 +120,35 @@
                         <li>Reconhecimentos</li>
                         <li>Licenças</li>
                     </ul>
+
+                    <ul class="ul_footer">
+                        <h3>Contato</h3>
+        
+                        <li>Tel: (11) 91234-5678</li>
+                        <li>Email: TechBerry@gmail.com</li>
+        
+                    </ul>
+                </div>
+            </div>
+
+            <div class="divisao"></div>
+            
+            <div class="boxes_footer2">
+                <div class="titulo">
+                    <img src="imgs/logo1.png" alt="">
+                    <h1>TechBerry</h1>
                 </div>
 
+                <a href="index-cadastro.html">
+                    <div class="cadastro_botao">
+                        Cadastro
+                    </div>
+                </a>
             </div>
+
         </div>
 
 
-    </div>
-
-    <div class="logo_footer">
-        <img src="./assets/imgs/logo1.png" alt=""><h3>TechBerry</h3>
     </div>
 
 

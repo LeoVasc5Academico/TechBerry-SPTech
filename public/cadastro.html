@@ -5,24 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="./assets/imgs/logo1.png">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="imgs/logo1.png">
     <title>TechBerry - Cadastro</title>
 </head>
 
 <body>
+    <!-- HEADER -->
+
     <div class="fundo_login">
         <div class="header">
             <div class="container">
 
                 <div class="titulo">
-                    <img src="./assets/imgs/logo1.png" alt="">
+                    <img src="imgs/logo1.png" alt="">
                     <h1>TechBerry</h1>
                 </div>
 
                 <ul class="navBar">
                     <li>
-                        <a href="index.html">
+                        <a href="/">
                             Home
                         </a>
                     </li>
@@ -36,74 +38,74 @@
                             Simulador
                         </a>
                     </li>
-                    <li>
-                        <a href="">
-                            Contato
-                        </a>
-                    </li>
                 </ul>
 
                 <ul class="register">
-
-                    <div id="cadastro">
-                        <li class="aqui"> <a>Cadastro</a> </li>
-                    </div>
+                    <a href="index-cadastro.html">
+                        <div class="cadastro_botao">
+                            <li>Cadastro</li>
+                        </div>
+                    </a>
 
                     |
 
-
-                    <div id="login">
-                        <li> <a href="login.html" >Login</a></li>
-                    </div>
+                    <a href="login.html">
+                        <div class="login_botao">
+                            <li> Login</li>
+                        </div>
+                    </a>
 
                 </ul>
 
             </div>
         </div>
 
+        <!-- BANNER -->
+
         <div class="banner_cadastro">
             <div class="container">
-
 
                 <div class="cadastro">
                     <div class="cadastro_titulo">
                         <h2>Cadastro</h2>
                     </div>
 
-                
-
                     <div class="boxes_cadastro">
-
-
-                        <div class="box_cadastro1">
-                            <h5>Nome:</h5>
-                            <input id="nome_input" class="ipt" type="text" placeholder="Seu Nome">
-                            <h5>Email:</h5>
-                            <input id="email_input" class="ipt" type="text" placeholder="exemplo@gmail.com">
-                            <h5>CNPJ:</h5>
-                            <input id="cnpj_input" class="ipt" type="text" placeholder="XX. XXX. XXX/0001-XX">
+                        <div class="box_cadastro">
+                            <div class="campo">
+                                Nome
+                                <input id="nome_input" class="ipt" type="text" placeholder="Nome Sobrenome">
+                            </div>
+                            <div class="campo">
+                                Email
+                                <input id="email_input" class="ipt" type="text" placeholder="exemplo@gmail.com">
+                            </div>
+                            <div class="campo">
+                                CNPJ
+                                <input id="cnpj_input" class="ipt" type="text" placeholder="XX.XXX.XXX/0001-XX">
+                            </div>
                         </div>
 
                         <div class="linha"></div>
 
-                        <div class="boxes_cadastro2">
-                            <h5>Senha:</h5>
-                            <input id="senha_input" class="ipt" type="password" placeholder="**********">
-                            <h5>Confirmar senha</h5>
-                            <input id="confirmacao_senha_input" class="ipt" type="password" placeholder="**********">
-                            <h5>Telefone:</h5>
-                            <input id="telefone_input" type="text" class="ipt" placeholder="(00) 00000-0000">
+                        <div class="box_cadastro">
+                            <div class="campo">
+                                Senha
+                                <input id="senha_input" class="ipt" type="password" placeholder="**********">
+                            </div>
+                            <div class="campo">
+                                Confirmar Senha
+                                <input id="confirmacao_senha_input" class="ipt" type="password" placeholder="**********">
+                            </div>
+                            <div class="campo">
+                                Telefone
+                                <input id="telefone_input" type="text" class="ipt" placeholder="(00) 91234-5678">
+                            </div>
                         </div>
-
-
-
-
                     </div>
 
-                    <div class="fim_registro">
-                        <button class="btn_cadastro" onclick="cadastrar()">Cadastrar</button>
-
-                    
+                    <div class="fim_cadastro">
+                        <button onclick="cadastrar()" class="btn_cadastro">Cadastrar</button>
                     </div>
 
 

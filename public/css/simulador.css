@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: #B31C45;
+    background: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -9,22 +9,17 @@ body {
     margin: auto;
     display: flex;
     /* border: 3px solid red; */
-    
+
 }
- 
+
 
 /* FUNDO HEADER + BANNER */
 
-.fundo_servicos {
+.fundo {
     margin: auto;
-    /* background-image: url(imgs/multiple-strawberries-blue-background-cut4.jpg); */
-    background-image: url(https://i.ytimg.com/vi/l1Cnz4Jeq5Q/maxresdefault.jpg), url(https://www.colorhexa.com/b31c45.png);
-    background-blend-mode: multiply;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: #b31c45;
     width: 100%;
-    height: 560px;
+    height: 754px;
     /* border: 3px solid purple; */
 }
 
@@ -39,7 +34,7 @@ body {
 
 }
 
-.header .container{
+.header .container {
     justify-content: space-between;
 }
 
@@ -54,7 +49,7 @@ body {
     /* border: 3px solid blue; */
 }
 
-.titulo img{
+.titulo img {
     width: 50px;
     height: 50px;
     border-radius: 12px;
@@ -85,7 +80,7 @@ body {
 .cadastro_botao {
     background-color: white;
     color: black;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
     width: 98px;
     padding: 10px;
     border-radius: 24px;
@@ -95,19 +90,18 @@ body {
     justify-content: center;
 }
 
-.cadastro_botao:hover {
+.cadastro_botao:hover{
     background-color: whitesmoke;
 }
-
 
 .cadastro_botao a{
     color: #000;
 }
 
 .login_botao {
-    background-color: #E3101F;
+    background-color: #f00;
     color: white;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
     width: 84px;
     padding: 10px;
     border-radius: 24px;
@@ -118,10 +112,9 @@ body {
     justify-content: center;
 }
 
-.login_botao:hover{
-    background-color: #c50e0e;
+.login_botao:hover {
+    background-color: #B31C45;
 }
-
 
 .aqui {
     font-size: 18px;
@@ -130,59 +123,84 @@ body {
 
 a {
     color: white;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 /* BANNER */
 
 .banner {
     display: flex;
-    align-items: center;
     /* border: 3px solid blue;  */
 }
 
-.banner h1 {
+.banner .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2%;
+    /* border: 3px solid blue; */
+}
+
+.box1 {
+    display: flex;
+    width: 550px;
+    height: 550px;
     color: white;
-    font-size: 56px;
-    width: 48%;
-    /* text-shadow: 1px 1px black;  */
+    font-size: xx-large;
+    align-items: center;
 }
 
-/* SOCIAL */
-.servicos{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    display: table;
-    width: 100%;
-    background-color: #f8f8f8;
+.box2 {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: white;
+    border-radius: 50px;
+    width: 550px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
 }
 
-.servicos h1{
+#butao {
+    background-color: whitesmoke;
+    color: black;
+    width: 92px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    border-radius: 24px;
+    border: 0;
+    padding: 10px;
+    margin: 25px;
+}
+
+#butao:hover{
+    background-color: rgb(236, 236, 236);
+    cursor: pointer;
+}
+
+.ipt {
+    display: flex;
+    border-radius: 24px;
+    font-size: 14px;
     text-align: center;
-    padding: 24px 0 8px 0;
-    font-size: 48px;
+    height: 40px;
+    width: 320px;
+    margin-top: 25px;
 }
 
-.servicos .boxes{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 0 64px 64px 64px;
-    text-align: center;
+#resultado{
+    width: 90%;
+    margin-bottom: 25px;
 }
 
-.servicos .box{
-    margin: 0 auto;
-    border-radius: 16px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 32px;
-    width: 360px;
-    line-height: 1.6;
+.box2 span {
+    color: gray;
 }
 
-.servicos .box img{
-    width: 128px;
-}
-
-/* FOOTER - COMEÇO */
+/* FOOTER */
 
 .footer{
     background-color: #B31C45;
@@ -244,13 +262,11 @@ a {
     align-items: center;
 }
 
+/* FOOTER - COMEÇO */
+
 .footer .titulo {
     justify-content: left;
 }
-
-/* FOOTER - FIM */
-
-/* SCROLL BAR - COMEÇO */
 
 ::-webkit-scrollbar-track {
     background-color: whitesmoke;
